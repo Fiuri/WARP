@@ -1,0 +1,125 @@
+from: "D:/Project Ragnarok/RO Experiment/Build Client/ExperimentRO/RagexeRE.exe"
+to: "D:/Project Ragnarok/RO Experiment/Build Client/ExperimentRO/ExperimentRO.exe"
+inputs:
+    $ssQuality:
+        data: '50'
+        display: "80"
+    
+    $customWindowTitle:
+        data: '4578706572696d656e74524f20763100'
+        display: "ExperimentRO v1"
+    
+    $max_friends:
+        data: '64'
+        display: "100"
+    
+    $inpFlag:
+        data: ''
+        display: "Inputs/FlagSpec.yml"
+    
+    $chatRoomBoxLen:
+        data: 'ea000000'
+        display: "234"
+    
+    $pmBoxLen:
+        data: 'ea000000'
+        display: "234"
+    
+    $newItemInfo:
+        data: '53797374656d2f6974656d696e666f2e6c756100'
+        display: "System/iteminfo.lua"
+    
+    $warpFadeOutDelay:
+        data: '64000000'
+        display: "100"
+    
+    $dataINI:
+        data: '444154412e494e4900'
+        display: "DATA.INI"
+    
+    $translationFile:
+        data: ''
+        display: "Inputs/Translations_EN.yml"
+    
+    $viewIDLimit:
+        data: '00fa0000'
+        display: "64000"
+    
+    $chatBoxLen:
+        data: 'ea000000'
+        display: "234"
+    
+    $max_party_value:
+        data: '0f'
+        display: "15"
+    
+    $vendingLimit:
+        data: '00943577'
+        display: "2000000000"
+    
+    $newclientinfo:
+        data: '636c69656e74696e666f2e786d6c00'
+        display: "clientinfo.xml"
+    
+    $MaxItemCount:
+        data: 'c8000000'
+        display: "200"
+    
+    $chatFloodLimit:
+        data: '0a'
+        display: "10"
+    
+patches:
+    - LimitedChatRepeat
+    - MediumCamAngle
+    - Zoom175Percent
+    - RestoreIcon
+    - GRFsFromIni
+    - UseOldLogin
+    - ZeroCinShop
+    - HideLicense
+    - CustomItemInfoLub
+    - CustomClientInfo
+    - ResizeChatBox
+    - ResizeChatRoomBox
+    - ResizePMBox
+    - NoGravityAds
+    - NoGravityLogo
+    - MsgStrings
+    - No1and1Arg
+    - EnableWho
+    - EnableShowName
+    - EnableSysMenu
+    - CustomWinTitle
+    - NoAutoFollow
+    - TranslateClient
+    - GuildBrackets
+    - FixChatAt
+    - NoHourly
+    - EnableFlagEmotes
+    - NoSerialDisplay
+    - CustomInventoryLimit
+    - InsensitiveStorageSearch
+    - CustomVendingLimit
+    - NoHelpMsg
+    - CustomFadeDelay
+    - RelativeDelay4CharDel
+    - AlwaysAscii
+    - CustomSSQuality
+    - EnableDnsSupport
+    - CallKoreaClientInfo
+    - PlainTextDesc
+    - LoadKrExtSettings
+    - IncrViewID
+    - IncrMapQuality
+    - ItemInfoPerServer
+    - UseStateLubIcon
+    - HideBuildInfo
+    - ShowBGEmblem
+    - CustomFriendsLimit
+    - CustomPartyLimit
+    - NoEquipSwap
+    - NoFilenameCheck
+    - NoNagle
+    - NoHardCodedAddr
+    - NoGNJoyLaunch

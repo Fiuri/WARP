@@ -1,0 +1,144 @@
+from: "D:/Project Ragnarok/ExperimentRO/Patcher/Client/2020-04-01bRagexe.exe"
+to: "D:/Project Ragnarok/ExperimentRO/Patcher/Client/ExperimentROv3.3.exe"
+inputs:
+    $npcBoxLength:
+        data: '00100000'
+        display: "4096"
+    
+    $copyNCDdll:
+        data: ''
+        display: "true"
+    
+    $chatBoxLen:
+        data: 'ea000000'
+        display: "234"
+    
+    $max_party_value:
+        data: '0f'
+        display: "15"
+    
+    $translationFile:
+        data: ''
+        display: "Inputs/Translations_EN.yml"
+    
+    $MaxItemCount:
+        data: '2c010000'
+        display: "300"
+    
+    $newHiddenButtons:
+        data: ''
+        display: 
+            - "Shop"
+            - "Achievement"
+            - "Battleground"
+            - "Tip"
+            - "WorldMap"
+            - "Navigation"
+            - "Attendance"
+            - "AdventureAgency"
+    
+    $viewIDLimit:
+        data: '00fa0000'
+        display: "64000"
+    
+    $chatFloodLimit:
+        data: '05'
+        display: "5"
+    
+    $customWindowTitle:
+        data: '4578706572696d656e74524f2076332e3200'
+        display: "ExperimentRO v3.2"
+    
+    $warpFadeOutDelay:
+        data: '00000000'
+        display: "0"
+    
+    $pmBoxLen:
+        data: 'ea000000'
+        display: "234"
+    
+    $max_friends:
+        data: '32'
+        display: "50"
+    
+    $ssQuality:
+        data: '64'
+        display: "100"
+    
+    $inpFlag:
+        data: ''
+        display: "Inputs/FlagSpec.yml"
+    
+    $chatRoomBoxLen:
+        data: 'ea000000'
+        display: "234"
+    
+    $newItemInfo:
+        data: '53797374656d2f6974656d696e666f2e6c756100'
+        display: "System/iteminfo.lua"
+    
+    $dataINI:
+        data: '444154412e494e4900'
+        display: "DATA.INI"
+    
+patches:
+    - LimitedChatRepeat
+    - MediumCamAngle
+    - Zoom75Percent
+    - RestoreIcon
+    - GRFsFromIni
+    - UseOldLogin
+    - HideCashShop
+    - HideLicense
+    - CustomItemInfoLub
+    - ResizeChatBox
+    - ResizeChatRoomBox
+    - ResizePMBox
+    - ResizeNpcBox
+    - NoGravityAds
+    - NoGravityLogo
+    - MsgStrings
+    - No1and1Arg
+    - EnableWho
+    - EnableShowName
+    - EnableSysMenu
+    - CustomWinTitle
+    - NoCDefender
+    - SkipServiceSelect
+    - OpenToServiceSelect
+    - TranslateClient
+    - TranslateTaekwon
+    - GuildBrackets
+    - FixChatAt
+    - NoHourly
+    - EnableFlagEmotes
+    - NoSerialDisplay
+    - AllowSpaceInGName
+    - CustomInventoryLimit
+    - NoHelpMsg
+    - HideWorldView
+    - CustomFadeDelay
+    - HideZeroDateInGuildWin
+    - ShortcutForAll
+    - HideNewButtons
+    - AlwaysAscii
+    - CustomSSQuality
+    - EnableDnsSupport
+    - PlainTextDesc
+    - IncrViewID
+    - IncrMapQuality
+    - HideBuildInfo
+    - NoMapInfo
+    - NoGMSprite
+    - ShowBGEmblem
+    - Allow65kHairs
+    - CustomFriendsLimit
+    - CustomPartyLimit
+    - NoEquipSwap
+    - NoEquipWinTitle
+    - NoNagle
+    - NoHardCodedAddr
+    - NoGNJoyLaunch
+    - SendClientFlags
+    - HidePacketsFromPEEK
+    - Enable44kHzAudio
